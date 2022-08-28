@@ -1,0 +1,287 @@
+/*  --------------- Google font Cdn here ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto:wght@500&display=swap');
+/* font-family: 'Cabin', sans-serif;
+font-family: 'Roboto', sans-serif; */
+:root{
+    --navcolor:white;
+    --navbgcolor:#7119E5;
+    --backcolor:rgb(188, 237, 205);
+}
+
+/* -------------   Google and other cdn end here ---------- */
+/* ----------- navbar strat here ----------- */
+.navbar-brand img
+{
+    resize: none;
+    height: 50px;
+    width: 60px;
+}
+
+nav{
+    background-color:var(--navbgcolor);
+}
+.navbar
+{
+    color: var(--navcolor);
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.2rem;
+}
+/* #navbar-ul .nav-item .nav-link:focus, */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color:var(--navbgcolor);
+    border: none;
+}
+.nav-link:hover
+{
+    color: #000;
+}
+.nav-link
+{
+    padding-left:10px ;
+    color: var(--navcolor);
+}
+.navbar-icon
+{
+    padding-left: 10px;
+}
+.navbar-icon a i{
+    color: white;
+
+} 
+.navbar-icon  i{
+    padding: 0px; 
+}
+.navbar-icon :nth-child(4)
+{
+    border-right: 1px solid white;
+}
+.nav-link:hover, .dropdown-item:hover,  .navbar-icon i:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    color: rgb(20, 9, 60);
+} 
+.navbar-icon>span
+{
+    padding-left:15px ;
+}
+/* ----------- navbar end here ------------ */
+/* -------------- flex-column start here ----------- */
+#v-pills-tab
+{
+    height: 90vh;
+    overflow-y: auto;
+    display: block;
+    padding:0px 15px;   
+}
+
+#v-pills-tab button:disabled
+{
+    font-weight: bold;
+    color: #000;
+    cursor: default;
+    
+}
+#v-pills-tab button
+{
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.tab-pane, button.nav-link
+{
+    color: #000;
+}
+/* 
+ span .line >.cl{
+    padding:0px  30px;
+} */
+.Introduction-page ol > li{
+    margin: 20px;
+}
+
+
+.introduction_code
+{
+    width: 55vw;
+    height: 47vh;
+    background-color: rgb(211, 206, 206);
+}
+.Introduction-page ol
+{
+    width: 60vw;
+}
+.introduction_code_start
+{
+    padding:7px 10px;
+}
+#v-pills-tabContent
+{
+    height: 90vh;
+    overflow-y: auto;
+    display: block;
+    padding:0px 15px; 
+    width: 80vw;  
+}
+
+/* ----------- flex-coloumn end here -------- */
+
+
+.footer-ul{
+    cursor: pointer;
+}
+
+
+
+
+/* *********************************************** */
+
+
+/* ------------- footer start here ----------- */
+footer {
+    background-color: rgb(211, 206, 206);
+    margin-top: 20px;
+  }
+  #footer {
+    padding-top: 20px;
+  }
+  .footer-ul {
+    list-style-type: none;
+  }
+  .footer-ul li {
+    text-align: left;
+  }
+  .footer-title {
+    padding-left: 30px;
+    flex-wrap: wrap;
+  }
+  
+
+
+/* --------  footer end  here ---------- */
+#fa-book
+{
+    color: #7119E5;
+}
+#fa-globe
+{
+    color: blue;
+}
+#fa-pen
+{
+    color: rgb(229, 122, 34);
+}
+#fa-swatchbook
+{
+    color: rgb(246, 63, 142);
+}
+#file-code
+{
+    color: rgb(247, 226, 105);
+}
+#fa-form
+{
+    color: rgb(82, 174, 245);
+}
+#fa-bar
+{
+    color: rgb(42, 235, 161);
+}
+.fa-file-lines
+{
+    color: gray;
+}
+.fa-compass
+{
+   color: rgb(226, 26, 244);
+}
+
+
+
+
+/*------------- media Query here start ------*/
+@media (max-width: 780px) {
+    
+    .navbar
+    {
+        font-size: 1rem;
+    }
+  }
+
+  @media  (max-width:615px) {
+    #v-pills-tab
+    {
+        display: none;
+    }
+    #v-pills-tabContent
+    {
+        display: block;
+        width: 100vw;
+    }
+   
+  }
+  @media (min-width:678px) and (max-width:1210px)
+  {
+    .introduction_code 
+    {
+        height: 55vh;     
+        font-size: 16px;
+        padding: 0;
+        box-sizing: content-box;
+    }
+  }
+  @media (min-width:410px) and (max-width:678px)
+  {
+    .introduction_code 
+    {
+        height: 55vh;     
+        font-size: 13px;
+        padding: 0;
+        box-sizing: content-box;
+    }
+  }
+  @media (min-width:120px)  and (max-width:409px)  {
+    .introduction_code 
+    {
+        display: none;
+    }
+    ol{
+        margin:0%;
+        padding:0%;
+    }
+    .footer-title
+    {
+        font-size:15px
+    }
+    .Introduction-page ol {
+        width: 90vw;
+    }
+  }
+  /* @media (min-width:50px)  and (max-width:149px)  {
+    .introduction_code 
+    {
+        display: none;
+    }
+    .Introduction-page ol {
+        width: 60vw;
+    }
+      .introduction_code_start
+  {
+    display:none;
+  }
+
+} */
+
+  /* @media (max-width:767px)
+  {
+    .hide
+    {
+        display: none;
+    }
+    #navbar-nav
+    {
+        display: block;
+    }
+  }
+   */

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>GetBootstrap</title>
+    <link rel="icon" sizes="180x180" href="images/bootstrap_logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <!-- ------------  navbar-started here---------- -->
+     <nav class="navbar navbar-expand-md">
+        <div class="container-fluid ">
+            <a href="#" class="navbar-brand">
+                <img src="images/bb.png" alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-nav">
+                <span class="navbar-toggler-icon"  ></span>
+            </button>
+            <div class=" justify-content-md-between  collapse navbar-collapse  " id="navbar-nav">
+                <ul class="navbar-nav mb-2 " id="navbar-ul">
+                    <li class="nav-item"><a href="Profile.html" class="nav-link ">Docs</a></li>
+                    <li class="nav-item"><a href="subprofile/Example.html" class="nav-link">Examples</a></li>
+                    <li class="nav-item"><a href="subprofile/Icons.html" class="nav-link">Icons</a></li>
+                    <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown">Themes</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Apple</li>
+                            <li class="dropdown-item">Samsung</li>
+                            <li class="dropdown-item">One+</li>
+                            <li class="dropdown-item">Asus</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="subprofile/Blog.html" class="nav-link">Blog</a></li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-3" id="search">
+                        </div>
+                    </div>
+                </form>
+                <span class="navbar-icon ">
+                    <a href="https://github.com/" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://bootstrap-slack.herokuapp.com/" target="_blank">
+                        <i class="fa-solid fa-hashtag"></i>
+                    </a>
+                    <a href="https://opencollective.com/bootstrap" target="_blank">
+                        <i class="fa-solid fa-circle-notch"></i>
+                    </a>
+                    <span>v5.2</span>
+                </span>
+            </div>
+
+        </div>
+    </nav> 
+    <!----------------  navbar-ended here ------- -->
+    
+    <!-- --------------- flex-column start here -------- -->
+    <div class="d-flex align-items-start mt-3 ">
+      
+        <div class="nav flex-column nav-pills me-3 col-md-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+            <!-- ----------- Getting started  start------- -->
+
+            <button class="nav-link apple " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-introduction"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="false" disabled>
+                <i class="fa-solid fa-book-open" id="fa-book"></i>
+                Getting started
+            </button>
+
+            <button class="nav-link apple active" id="v-pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                aria-selected="true">Inoduction
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Download
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">contents
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">JavaScript
+            </button>
+
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">Webpack
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile
+            </button>
+
+            <!-- -------- Getting  end here ----- -->
+
+            <!-- ------ Custmize start here ------------->
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                <i class="fa-solid fa-swatchbook" id="fa-swatchbook"></i>
+                
+                Custmize
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">overview
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">option
+            </button>
+            <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Color
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                Components
+            </button>
+
+            <!-- --------- Custmize end here ------------ -->
+
+            <!-- --------- Layout started here --------- -->
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                <i class="fa-solid fa-file-code" id="file-code"></i>
+                Layout
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Breakpoints
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Container
+            </button>
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Grid
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Columns
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Utilites
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Z-index
+            </button>
+
+            <!-- --------- Layout end here -------- -->
+
+            <!-- -------- Content start here -------- -->
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" disabled>
+                <i class="fa-regular fa-file-lines"></i>
+                Content
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Reboot
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Typography
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Images
+            </button>
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Tables
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Figures
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                <i class="fa-solid fa-indent" id="fa-form"></i>
+                Forms
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">overview
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">form control
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Select
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Checks & radio
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Range
+            </button>
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Input Group
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                <i class="fa-light fa-table-cells-large"></i>
+                Layout
+            </button>
+
+            <!-- ----- Components start here ------ -->
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                <i class="fa-solid fa-bars-progress" id="fa-bar"></i>
+                Components
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Accordition
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Alerts
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Badge
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Breadcrumb
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Button
+            </button>
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Card
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Carousel
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">close button
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Collapse
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dropdown
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">List group
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Modal
+            </button>
+
+            <!-- ************************************ -->
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">navbar
+            </button>
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Navs&tabs
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Pagination
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Placeholder
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Popover
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Progress
+            </button>
+
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Scrollspy
+            </button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Toasts
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Tooltips
+            </button>
+            <!-- ------------ Components end here ------------   -->
+
+            <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" disabled>
+                <i class="fa-solid fa-pen-clip" id="fa-pen"></i>
+                Helpers
+
+            </button>
+
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">clearfix
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Color & Background
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Ratio
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Stacks
+            </button>
+
+            <!-- ----------  Utilites start here ------------ -->
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                <i class="fa-solid fa-compass"></i>
+                Utilites
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">API
+            </button>
+            <!-- ****************************** -->
+
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Background
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Placeholder
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Popover
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Progress
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Scrollspy
+            </button>
+
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Toasts
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Tooltips
+            </button>
+
+            <!-- ------------- Utilites end here -----------  -->
+
+            <!-- -------- About start here ---------- -->
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" disabled>
+                <i class="fa-solid fa-globe" id="fa-globe"></i>
+                About
+            </button>
+
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">overview
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Team
+            </button>
+
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+                type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Brand
+            </button>
+            <!-- ---------- About end here ----------- -->
+        </div>
+
+        <div class="tab-content col-md-10" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-introduction" role="tabpanel" tabindex="0">
+                <div class="Introduction-page">
+                    <!-- --------- It is header -------- -->
+                    <header>
+                        <h1>Get started with bootstrap</h1>
+                        <p>
+                            Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to
+                            production—in minutes.
+                        </p>
+                    </header>
+
+                    <h3>Quick start</h3>
+                    <p>
+                        Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the
+                        need for any build steps. See it in practice with this <a
+                            href="https://codepen.io/team/bootstrap/pen/qBamdLj" target="_blank"> Bootstrap CodePen demo.</a>
+                    </p>
+                    <ol>
+                        <li>
+                            <p> Create a new index.html file in your project root. Include the
+                                <meta name="viewport"> tag as well for proper responsive behavior in mobile devices.
+                            </p>
+
+                        </li>
+                        <div class="introduction_code">
+                            <div class="introduction_code_start">
+                                <code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span><br>
+                                  </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+                                 </span></span><br><span class="line" ><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span   class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Bootstrap demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+                                </span></span><br><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+                               </span></span>
+                            </code>
+                            </div>
+                        </div>
+                        <li>
+                            <p><b>Include Bootstrap’s CSS and JS. </b>&lt;link&gt; tag in <span>&lt;head&gt;</span>Our CSS,and the type <span>&lt;script&gt;</span>
+                                JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing
+                                &lt;body&gt;
+                            </p>
+                        </li>
+                        <div class="introduction_code">
+                            <div class="introduction_code_start">
+                                <code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span><br>
+                                  </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+                                 </span></span><br><span class="line" ><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span   class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Bootstrap demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+                                </span></span><br><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+                               </span></span><br><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+                               </span></span>
+                            </code>
+                            </div>
+                        </div>
+                    </ol>
+                    <h2>Community </h2>
+                    <p>
+                        Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
+                        <ul>
+                            <li>Read and subscribe to The Official Bootstrap Blog.</li>
+                            <li>Join the official Slack room.</li>
+                            <li>Chat with fellow Bootstrappers in IRC. On the irc.libera.chat server, in the #bootstrap channel.</li>
+                            <li>Implementation help may be found at Stack Overflow (tagged bootstrap-5).</li>
+                            <li>Developers should use the keyword bootstrap on packages that modify or add to the functionality of Bootstrap when distributing through npm or similar delivery mechanisms for maximum discoverability.</li>
+                        </ul>
+                        
+                        You can also follow @getbootstrap on Twitter for the latest gossip and awesome music videos.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" tabindex="0">Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Iure voluptatibus non distinctio a perferendis, officiis error eos
+                deleniti. Voluptatum obcaecati consequuntur ratione exercitationem natus adipisci, corporis soluta
+                dignissimos vitae amet?</div>
+
+            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" tabindex="0">Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Ad est dolorum magnam velit aliquam! Unde impedit quisquam reiciendis,
+                possimus modi id reprehenderit commodi ad officiis iure. Atque possimus incidunt quae!
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore accusamus cum nisi,
+                officiis et numquam deserunt facere ratione est tempore consectetur, at eaque doloremque voluptatem
+                consequatur atque vero, eum dolorem! </div>
+
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" tabindex="0">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Minus hic, animi consequatur illum magnam ipsa esse ipsum delectus debitis
+                recusandae a amet impedit quae. Ullam soluta odit repudiandae obcaecati aut.</div>
+         </div>
+        </div>
+    </div>
+    
+    <!-- ------------------ footer start here ------------ -->
+    <footer>
+        <div class="container mt-4 " id="footer">
+            <div class="row">
+                <div class="col-md-4 mb-2 col-sm-4"><h5 class="footer-title">
+                    <i class="fa-brands fa-bootstrap " ></i> Bootstrap
+                    </h5>
+                    Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.
+                    Code licensed MIT, docs CC BY 3.0.
+                    Currently v5.2.0.
+                </div>
+                <div class="col-md-2  col-sm-4 "><h5 class="footer-title"> Links </h5>
+                    <ul class="footer-ul">
+                        <li>Home</li>
+                        <li>Docs</li>
+                        <li>Examples</li>
+                        <li>Icon</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="col-md-2  col-sm-4 "><h5 class="footer-title"> Guides </h5>
+                    <ul class="footer-ul">
+                        <li>Getting Started</li>
+                        <li>start template</li>
+                        <li>Webpack</li>
+                        <li>Parcel</li>
+                        <li>vite</li>
+                    </ul>
+                </div>
+                <div class="col-md-2  col-sm-4 "><h5 class="footer-title"> Project </h5>
+                    <ul class="footer-ul">
+                        <li>Bootstrap 5</li>
+                        <li>Bootstrap 4</li>
+                        <li>Icons</li>
+                        <li>RFS</li>
+                    </ul>
+                </div>
+                <div class="col-md-2  col-sm-4"><h5 class="footer-title"> Community </h5>
+                    <ul class="footer-ul">
+                        <li>Issues</li>
+                        <li>Discussions</li>
+                        <li>Corporate sponsors</li>
+                        <li>Open Collection</li>
+                        <li>Slack</li>
+                        <li>Stack Overlow</li>
+                    </ul>        
+                </div>
+            </div>
+          
+        </div>
+        </footer>   
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="ProJs.js"></script>
+
+</html>

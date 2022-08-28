@@ -1,0 +1,120 @@
+/*  --------------- Google font Cdn here ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto:wght@500&display=swap');
+/* font-family: 'Cabin', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+
+:root {
+  --backcolor: rgb(188, 237, 205);
+}
+body {
+  background-color: var(--backcolor);
+}
+
+/* --------- header start here ----------- */
+.Example h1 {
+  padding-left: 10px;
+  font-family: "Cabin", sans-serif;
+}
+.Example p {
+  padding-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.main-img {
+  height: 150px;
+  width: 260px;
+  border-radius: 6px;
+}
+.main-img + h5 {
+  color: blue;
+}
+
+/* ------------- footer start here ----------- */
+footer {
+  background-color: rgb(211, 206, 206);
+  margin-top: 20px;
+}
+#footer {
+  padding-top: 20px;
+}
+.footer-ul {
+  list-style-type: none;
+}
+.footer-ul li {
+  text-align: left;
+}
+.footer-title {
+  padding-left: 30px;
+  flex-wrap: wrap;
+}
+
+/* -------- media query start here ---------- */
+@media (min-width:992px)and (max-width:1199px)
+{
+  .main-img
+  {
+    height: 120px;
+    width: 200px;
+  }
+}
+    /* -------- width 992 start here ---------- */
+@media (max-width:992px) {
+  .footer-title {
+    margin-top: 20px;
+  }
+  .main-img
+  {
+    justify-content: center;
+    display: inline;
+  }
+}
+/* ---------width 575 start here  ----------- */
+@media (max-width:575)
+{
+
+}
+
+@media (max-width: 442px) {
+  .download-btn button {
+    margin: 8px 25px;
+  }
+}
+    /* -------- width 250 start here ---------- */
+
+@media (max-width: 250px) {
+  .Example p {
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  .download-btn button {
+    font-size: 1rem;
+  }
+  .main-img {
+    height: 100px;
+    width: 160px;
+    border-radius: 3px;
+  }
+
+}
+
+/* -------- width 180 start here ---------- */
+
+@media (min-width:100px) and (max-width: 188px) {
+  .Example p {
+    padding-left: 10px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: center;
+  }
+ 
+  .main-img {
+    height: 80px;
+    width: 100px;
+    border-radius: 3px;
+  }
+  
+}

@@ -1,0 +1,56 @@
+
+
+:root
+{
+    --backcolor:rgb(188, 237, 205);
+}
+#heading
+{
+    font-family: 'Cabin', sans-serif;
+}
+
+#para
+{
+    font-family: 'Roboto', sans-serif;
+}
+#input-text
+{
+    width: 23vw;
+    
+}
+body{
+   background-color: var(--backcolor);
+}
+
+/* ------------- footer start here ----------- */
+footer {
+    background-color: rgb(211, 206, 206);
+    margin-top: 20px;
+  }
+  #footer {
+    padding-top: 20px;
+  }
+  .footer-ul {
+    list-style-type: none;
+  }
+  .footer-ul li {
+    text-align: left;
+  }
+  .footer-title {
+    padding-left: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* ------------- media query start here --------- */
+  @media (min-width:90px) and (max-width:195px)
+  {
+    .text-figma
+    {
+      font-size:10px;
+    }
+    #input-text
+    {
+      width:70px;
+    }
+    
+  }
